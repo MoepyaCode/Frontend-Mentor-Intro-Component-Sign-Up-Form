@@ -11,6 +11,13 @@ export default {
     extend: {
       fontFamily: {
         poppins: ['Poppins', 'sans-serif'],
+      },
+      backgroundImage: {
+        mobile: "url('/src/assets/bg-intro-mobile.png')",
+        desktop: "url('/src/assets/bg-intro-desktop.png')",
+      },
+      screens: {
+        xs: '460px'
       }
     },
   },
