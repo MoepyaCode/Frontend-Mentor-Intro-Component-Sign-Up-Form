@@ -1,4 +1,4 @@
-# Title
+# Intro component with sign-up form
 
 <!-- add description of project -->
 
