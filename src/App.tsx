@@ -28,7 +28,19 @@ export default function App() {
           password: passwordRef.current?.value === '' ? 'Password cannot be empty' : null
         }
       })
-    } 
+    }
+
+    if (!(nameRef.current?.value === '') && !(lastNameRef.current?.value === '') && !(emailRef.current?.value === '') && !(passwordRef.current?.value === '')) {
+      setError(state => {
+        return {
+          ...state,
+          name: null,
+          lastName: null,
+          email: null,
+          password: null,
+        }
+      })
+    }
 
     return (e.target as HTMLFormElement).reset()
   }
